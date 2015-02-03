@@ -66,7 +66,8 @@ namespace XLabs.Platform.Device
 			Battery = new Battery();
 			Accelerometer = new Accelerometer();
 			FirmwareVersion = UIDevice.CurrentDevice.SystemVersion;
-			this.BluetoothHub = new BluetoothHub();
+            //RELATIONUP-142
+            //this.BluetoothHub = new BluetoothHub();
 
 			if (Device.Gyroscope.IsSupported)
 			{
