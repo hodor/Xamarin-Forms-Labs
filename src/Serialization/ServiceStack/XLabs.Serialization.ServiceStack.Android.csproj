@@ -38,6 +38,17 @@
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <DocumentationFile>..\..\..\build\XLabs.Serialization.ServiceStack.Droid.XML</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Ad-Hoc DSYM|AnyCPU'">
+    <OutputPath>bin\Ad-Hoc DSYM\</OutputPath>
+    <DefineConstants>TRACE;ANDROID</DefineConstants>
+    <DocumentationFile>..\..\..\build\XLabs.Serialization.ServiceStack.Droid.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
