@@ -59,10 +59,8 @@ namespace XLabs.Platform.Services
 			{
 				_speaker = new TextToSpeech(Context, this);
 
-				//var lang = GetInstalledLanguages ().FirstOrDefault (c => language) ?? DEFAULT_LOCALE;
-                //using default language for now
-                var lang = DEFAULT_LOCALE;
-                var locale = new Locale(lang);
+				var lang = GetInstalledLanguages().DefaultIfEmpty(DEFAULT_LOCALE).FirstOrDefault(c => c == language);
+				var locale = new Locale (lang);
 				_speaker.SetLanguage (locale);
 			}
 			else
