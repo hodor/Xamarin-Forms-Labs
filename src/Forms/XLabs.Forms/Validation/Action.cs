@@ -51,7 +51,7 @@ namespace XLabs.Forms.Validation
 				{ typeof(Constraint), new ConstraintTypeConverter() },
 				{ typeof(Font), new FontTypeConverter() },
 				{ typeof(GridLength), new GridLengthTypeConverter() },
-				{ typeof(ImageSource), new ImageSourceConverter() },
+				{ typeof(ImageSource), new XLabs.Forms.Controls.ImageSourceConverter() },
 				{ typeof(Keyboard), new KeyboardTypeConverter() },
 				{ typeof(Point), new PointTypeConverter() },
 				{ typeof(Thickness), new ThicknessTypeConverter() },
