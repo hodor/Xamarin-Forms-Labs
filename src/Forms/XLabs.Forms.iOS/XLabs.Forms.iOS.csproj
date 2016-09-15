@@ -200,5 +200,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
   </ItemGroup>
 </Project>
